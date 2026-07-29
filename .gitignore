@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+video-spec-hf.md
+assets/
+output/
+*.mp4
+*.wav
+*.mp3

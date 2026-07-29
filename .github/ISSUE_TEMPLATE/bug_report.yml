@@ -1,0 +1,40 @@
+name: Bug report
+description: 报告可复现的 Skill、文档或组件问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿粘贴密钥、Cookie、私人逐字稿或未公开素材。
+  - type: input
+    id: agent
+    attributes:
+      label: Agent 与版本
+      placeholder: Claude Code / Codex + 版本
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 最小复现输入
+      description: 使用公开或脱敏内容。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: 已完成的检查
+      placeholder: 例如：重新开会话、确认 SKILL.md 已加载、运行 scripts/check_repo.py

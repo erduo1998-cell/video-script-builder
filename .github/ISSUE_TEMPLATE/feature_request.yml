@@ -1,0 +1,33 @@
+name: Feature request
+description: 建议新的分镜能力、规则或文档改进
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的真实问题
+      description: 先描述问题，不要只写想加什么功能。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 示例或事实依据
+      description: 请使用公开或脱敏材料。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: 是否改变唯一交付物 video-spec-hf.md？
+      options:
+        - 否
+        - 是
+        - 不确定
+    validations:
+      required: true
