@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
-  <title id="title">Video Script Builder 与 HyperFrames 渲染端的交付边界</title>
-  <desc id="desc">左侧分镜导演只交付 video-spec-hf.md，右侧 HyperFrames 渲染端负责组件安装、composition、预览、批准和 MP4。</desc>
+  <title id="title">Video Script Builder 与对应框架渲染端的交付边界</title>
+  <desc id="desc">左侧分镜导演每次只交付一个 HyperFrames 或 Remotion spec，右侧对应框架渲染端负责 composition、预览、批准和 MP4。</desc>
   <defs>
     <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D0D0D"/>
@@ -34,24 +34,25 @@
   <text x="176" y="228" text-anchor="middle" class="tag">Agent A</text>
   <text x="110" y="285" class="h2">Video Script Builder</text>
   <text x="110" y="332" class="p">✓ 意图卡与叙事节拍</text>
-  <text x="110" y="371" class="p">✓ 组件 / 素材 / 时间码规划</text>
-  <text x="110" y="410" class="p">✓ GSAP 胶水、字幕与转场</text>
+  <text x="110" y="371" class="p">✓ 素材 / 实现单元 / 时间轴规划</text>
+  <text x="110" y="410" class="p">✓ 框架专属动画、字幕与转场</text>
   <text x="110" y="449" class="p">✓ 12 条硬校验</text>
   <text x="110" y="488" style="font:600 20px 'PingFang SC','Noto Sans SC',sans-serif;fill:#FF8A4C">到这里必须停止</text>
 
   <rect x="930" y="175" width="590" height="340" rx="30" fill="url(#right)" stroke="#634034"/>
   <rect x="960" y="205" width="132" height="34" rx="17" fill="#FA541C"/>
   <text x="1026" y="228" text-anchor="middle" class="tag">Agent B</text>
-  <text x="960" y="285" class="h2">HyperFrames 渲染端</text>
-  <text x="960" y="332" class="p">✓ 复核并安装官方组件</text>
-  <text x="960" y="371" class="p">✓ 创建 composition / index.html</text>
+  <text x="960" y="285" class="h2">对应框架渲染端</text>
+  <text x="960" y="332" class="p">✓ 复核 HF 组件 / Remotion 依赖</text>
+  <text x="960" y="371" class="p">✓ 创建对应框架 composition</text>
   <text x="960" y="410" class="p">✓ check、快照与实际预览</text>
   <text x="960" y="449" class="p">✓ 用户批准后渲染 MP4</text>
   <text x="960" y="488" style="font:600 20px 'PingFang SC','Noto Sans SC',sans-serif;fill:#FF8A4C">把执行反馈写回 §10</text>
 
   <path d="M690 330 H905" stroke="#FA541C" stroke-width="5" marker-end="url(#arr2)"/>
   <rect x="690" y="255" width="220" height="64" rx="18" fill="#11141A" stroke="#FA541C"/>
-  <text x="800" y="295" text-anchor="middle" class="mono">video-spec-hf.md</text>
+  <text x="800" y="282" text-anchor="middle" class="mono" style="font-size:18px">video-spec-hf.md</text>
+  <text x="800" y="307" text-anchor="middle" class="mono" style="font-size:18px">或 video-spec-remotion.md</text>
   <path d="M930 455 C850 575 750 575 670 455" fill="none" stroke="#6CA6D9" stroke-width="3" stroke-dasharray="10 10" marker-end="url(#arr2)"/>
   <text x="800" y="566" text-anchor="middle" style="font:500 18px 'PingFang SC','Noto Sans SC',sans-serif;fill:#8E99A8">渲染反馈回流，校准下一版 spec</text>
 </svg>

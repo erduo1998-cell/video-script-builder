@@ -1,11 +1,13 @@
 ---
 name: video-script-spec-template
-description: video-spec-hf.md 的 v1.3 骨架模板。组件引用 + 素材路径 + GSAP 胶水编排，不含完整 HTML/CSS 代码块。复制全文、把每个 [占位符] 换成真实内容。含 10 节 + Scene 字段模板 + 渲染反馈区。
+description: video-spec-hf.md 的 v1.4.0 HyperFrames 骨架模板。组件引用 + 素材路径 + GSAP 胶水编排，不含完整 HTML/CSS 代码块。保留 v1.3 的路径与执行契约，含共同 10 节语义骨架。
 ---
 
-# Video Spec (HyperFrames) 模板 v1.3
+# Video Spec (HyperFrames) 模板 v1.4.0
 
 复制下面整段，存成项目根目录的 `video-spec-hf.md`。每个 `[方括号]` 替换成真实内容。
+
+交付前还必须把安装命令中的 `[component-name]` 替换为逐项真实组件名；最终 spec 不得保留 `<name>`、`<组件名>` 或任何模板占位。
 
 ---
 
@@ -13,6 +15,7 @@ description: video-spec-hf.md 的 v1.3 骨架模板。组件引用 + 素材路�
 请你使用 HyperFrames 框架，按照以下分镜脚本帮我生成一条视频。
 
 🔒 渲染框架：HyperFrames
+🔒 时间真源：秒；使用 data-start / data-duration
    管线：HTML + CSS + GSAP → Puppeteer 逐帧截图 → FFmpeg 合成 MP4
    组件安装：所有组件通过 `npx hyperframes add <name>` 安装
    交付物：index.html (composition) + 渲染后的 MP4 视频文件
@@ -66,7 +69,7 @@ description: video-spec-hf.md 的 v1.3 骨架模板。组件引用 + 素材路�
 - 纯文字镜占比上限：≤ 20%
 
 
-## 4. 视觉规范
+## 4. 视觉与渲染规范
 
 ### 🔒 全局参数
 

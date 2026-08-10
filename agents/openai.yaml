@@ -1,4 +1,4 @@
 interface:
   display_name: "Video Script Builder"
-  short_description: "把中文逐字稿变成可执行的 HyperFrames 分镜规格"
-  default_prompt: "Use $video-script-builder to convert my Chinese voiceover script into a precise HyperFrames storyboard spec."
+  short_description: "把中文逐字稿变成 HyperFrames 或 Remotion 精确分镜"
+  default_prompt: "Use $video-script-builder to turn my Chinese voiceover script into one precise HyperFrames or Remotion storyboard spec."

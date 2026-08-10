@@ -1,11 +1,17 @@
 ---
 name: audio-workflow
-description: TTS 旁白生成工作流 + BGM 参数模板 + 音效使用纪律。分镜第六步素材绑定时对照使用。
+description: HyperFrames/Remotion 双后端的旁白、BGM、字幕时间戳与音效规划。只写入 spec，不在分镜阶段执行生成或转码。
 ---
 
 # BGM / TTS / 音频时间轴
 
-## 下游 TTS 工作流
+## 共同原则
+
+- 本 Skill 只规划音频，不执行 TTS、转录、转码或素材下载。
+- 没有真实逐词时间戳时写 `[待转录]`，禁止按字数均分伪造时间戳。
+- 语速基准：中文约 4 字/秒，最终以真实音频时长和转录结果为准。
+
+## HyperFrames 下游工作流
 
 本 Skill 只在 spec 中规划音频，不执行以下命令。命令由渲染端在用户批准后运行。
 
@@ -19,7 +25,31 @@ npx hyperframes transcribe assets/narration.wav --model small --language zh
 # 3. 根据时间戳对齐 GSAP 字幕动画
 ```
 
-语速基准：中文 4 字/秒。`--speed` 参数调整。
+`--speed` 用于调整语速；实际可用参数由渲染端按当前 CLI 复核。
+
+## Remotion 下游契约
+
+Remotion spec 不绑定某个 TTS 提供商。已有音频放入下游项目 `public/`，用 `staticFile()` 引用；音频组件优先使用 `@remotion/media` 的 `<Audio>`。
+
+```yaml
+旁白:
+  src: staticFile("audio/narration.wav")
+  from: 0
+  durationInFrames: [整数]
+  trimBefore: 0
+  trimAfter: [整数帧或 null]
+  volume: 1
+BGM:
+  src: staticFile("audio/bgm.mp3")
+  from: 0
+  durationInFrames: [总帧数]
+  volume: [静态值或 frame-driven 函数契约]
+字幕时间戳: [真实词级数据路径或 `[待转录]`]
+```
+
+- `from`、`durationInFrames`、trim 均以整数帧为真源。
+- 音量变化写成 `frame → interpolate() → volume` 契约，不使用 CSS/运行时时钟。
+- 远程音频必须记录稳定 URL、许可与本地 fallback；不要假定渲染时网络可用。
 
 ## BGM 参数模板
 

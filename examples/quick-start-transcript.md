@@ -1,8 +1,10 @@
 # 快速试跑逐字稿
 
-把下面内容连同这句提示词一起交给 Agent：
+把下面内容连同其中一句提示词交给 Agent：
 
-> 请使用 video-script-builder，把下面逐字稿拆成适合 9:16 短视频的 HyperFrames 分镜规格。
+> HyperFrames：请使用 video-script-builder，把下面逐字稿拆成适合 9:16 短视频的 HyperFrames 分镜规格。
+>
+> Remotion：请使用 video-script-builder，把下面逐字稿拆成适合 9:16、30fps 短视频的 Remotion 分镜规格。
 
 ---
 

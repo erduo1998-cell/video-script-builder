@@ -24,7 +24,7 @@ body:
   - type: dropdown
     id: boundary
     attributes:
-      label: 是否改变唯一交付物 video-spec-hf.md？
+      label: 是否改变双后端或“每次只交付一个 spec”的契约？
       options:
         - 否
         - 是

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="930" viewBox="0 0 1600 930" role="img" aria-labelledby="title desc">
   <title id="title">Video Script Builder 完整工作流</title>
-  <desc id="desc">逐字稿经过输入门控、意图卡、素材盘点、组件选型、时间轴编排和十二条校验，最终交付 video-spec-hf.md。</desc>
+  <desc id="desc">逐字稿经过框架路由、输入门控、意图卡、素材盘点、实现选型、时间轴编排和十二条校验，最终交付一个 HyperFrames 或 Remotion 分镜规格。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D0D0D"/>
@@ -30,7 +30,7 @@
   <circle cx="120" cy="870" r="300" fill="#6CA6D9" opacity=".045"/>
 
   <text x="90" y="92" class="title">从逐字稿到可执行分镜</text>
-  <text x="90" y="135" class="sub">先做导演决策，再把无歧义 spec 交给 HyperFrames 渲染端</text>
+  <text x="90" y="135" class="sub">共用导演判断，分开 HyperFrames / Remotion 执行契约</text>
 
   <g filter="url(#shadow)">
     <rect x="90" y="205" width="380" height="210" rx="26" fill="#191D24" stroke="#333B48"/>
@@ -38,8 +38,8 @@
     <text x="135" y="258" text-anchor="middle" class="num">1</text>
     <text x="180" y="258" class="step">输入与项目扫描</text>
     <text x="120" y="310" class="body">• 读取逐字稿，不重复索要输入</text>
-    <text x="120" y="344" class="body">• 查找已有 video-spec-hf.md</text>
-    <text x="120" y="378" class="body">• 判定从零创建 / 迭代模式</text>
+    <text x="120" y="344" class="body">• 识别现有 HF / Remotion spec</text>
+    <text x="120" y="378" class="body">• 锁定框架与创建 / 迭代模式</text>
 
     <rect x="610" y="205" width="380" height="210" rx="26" fill="#191D24" stroke="#333B48"/>
     <rect x="630" y="225" width="50" height="50" rx="15" fill="url(#accent)"/>
@@ -60,9 +60,9 @@
     <rect x="90" y="520" width="380" height="210" rx="26" fill="#191D24" stroke="#333B48"/>
     <rect x="110" y="540" width="50" height="50" rx="15" fill="url(#accent)"/>
     <text x="135" y="573" text-anchor="middle" class="num">4</text>
-    <text x="180" y="573" class="step">素材与组件</text>
+    <text x="180" y="573" class="step">素材与实现单元</text>
     <text x="120" y="625" class="body">• 已有 / 待获取 / fallback</text>
-    <text x="120" y="659" class="body">• 组件优先，CSS 只作降级</text>
+    <text x="120" y="659" class="body">• HF 组件 / Remotion 组件契约</text>
     <text x="120" y="693" class="body">• 每镜写明“为什么这样选”</text>
 
     <rect x="610" y="520" width="380" height="210" rx="26" fill="#191D24" stroke="#333B48"/>
@@ -70,7 +70,7 @@
     <text x="655" y="573" text-anchor="middle" class="num">5</text>
     <text x="700" y="573" class="step">时间轴编排</text>
     <text x="640" y="625" class="body">• Scene 时间码与旁白原文</text>
-    <text x="640" y="659" class="body">• GSAP 入场 / 停留 / 退场</text>
+    <text x="640" y="659" class="body">• 秒制 GSAP / 整数帧动画</text>
     <text x="640" y="693" class="body">• 字幕、转场、音频与层级</text>
 
     <rect x="1130" y="520" width="380" height="210" rx="26" fill="#191D24" stroke="#FA541C" stroke-width="2"/>
@@ -78,7 +78,7 @@
     <text x="1175" y="573" text-anchor="middle" class="num">6</text>
     <text x="1220" y="573" class="step">12 条硬校验</text>
     <text x="1160" y="625" class="body">• 锚点、覆盖、多样性、密度</text>
-    <text x="1160" y="659" class="body">• GSAP 边界与转场分布</text>
+    <text x="1160" y="659" class="body">• 框架绑定、时间闭合与转场</text>
     <text x="1160" y="693" class="body">• 不通过就修，不带病交付</text>
   </g>
 
@@ -89,7 +89,7 @@
   <path d="M990 625 H1115" stroke="#FA541C" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
 
   <rect x="310" y="790" width="980" height="90" rx="25" fill="#F5F0EB"/>
-  <text x="800" y="830" text-anchor="middle" style="font:800 28px 'PingFang SC','Noto Sans SC',sans-serif;fill:#0D0D0D">唯一交付物：video-spec-hf.md</text>
+  <text x="800" y="830" text-anchor="middle" style="font:800 28px 'PingFang SC','Noto Sans SC',sans-serif;fill:#0D0D0D">每次只交付一个：HF spec 或 Remotion spec</text>
   <text x="800" y="860" text-anchor="middle" class="small">生成后停止；不创建 HTML，不下载素材，不直接渲染 MP4</text>
   <path d="M1320 730 V770 H800 V786" stroke="#FA541C" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
 </svg>
