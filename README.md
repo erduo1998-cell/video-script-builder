@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/license-MIT-F5F0EB)](./LICENSE)
 [![Validate](https://github.com/erduo1998-cell/video-script-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/erduo1998-cell/video-script-builder/actions/workflows/validate.yml)
 
-[中文](./README.md) · [English](./README.en.md) · [问题反馈](https://github.com/erduo1998-cell/video-script-builder/issues)
+[中文](./README.md) · [English](./README.en.md) · [问题反馈](https://github.com/erduo1998-cell/video-script-builder/issues) · [会员与帮助](#membership-help)
 
 </div>
 
@@ -254,6 +254,16 @@ video-script-builder/
 python3 scripts/check_repo.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
+
+<a id="membership-help"></a>
+
+## 会员与帮助
+
+作者耳朵的「无限涌动 SURGE」提供**永久种子会员**，包含项目资料、视频案例、持续更新和文字答疑，也支持将自己的 AI 接入有权使用的会员资料库。适合希望结合资料继续学习分镜与视频表达的用户；实际资料与最新权益以网站为准。
+
+[了解会员权益](https://erduo.art/site/join) · [注册／登录并购买](https://login.erduo.art/purchase/checkout) · [咨询定制服务](https://erduo.art/site/business)
+
+会员为可选服务，本项目按 [MIT](./LICENSE) 使用或商用无需购买会员。文字答疑不包含远程安装、工程代排查或一对一代做；视频制作等定制服务需通过网站联系作者，另行确认范围与报价。本 Skill 仍只交付一份分镜 spec，渲染交给对应 Agent。
 
 ## 参与贡献
 

@@ -4,6 +4,8 @@ Turn a Chinese voiceover transcript into a precise, renderer-bound storyboard sp
 
 > The Chinese [README](./README.md) is the primary beginner guide and includes the full illustrated workflow, troubleshooting, and handoff instructions.
 
+[Membership & help](#membership-help)
+
 ## What changed in v1.4.0
 
 The skill now separates shared directing decisions from renderer-specific implementation contracts:
@@ -112,6 +114,16 @@ If one spec already exists and the user supplies a new transcript without explic
 - A transcript should ideally contain at least 100 Chinese characters, three semantic turns, and a concise ending takeaway.
 - Recheck HyperFrames components against the current [official registry](https://github.com/heygen-com/hyperframes/tree/main/registry) before rendering.
 - Recheck Remotion APIs and the target project version against the current [official documentation](https://www.remotion.dev/docs/) before implementation.
+
+<a id="membership-help"></a>
+
+## Membership & help
+
+Erduo’s **无限涌动 SURGE Seed Membership** offers lifetime membership status, project resources, video examples, ongoing updates, and text-based Q&A. You can also connect your own AI to the member resources you are entitled to use. It is an optional resource for learning storyboarding and visual storytelling; available materials and current benefits are listed on the website.
+
+[Explore membership](https://erduo.art/site/join) · [Register / sign in and purchase](https://login.erduo.art/purchase/checkout) · [Discuss custom services](https://erduo.art/site/business)
+
+Using this project, including commercially under its [MIT License](./LICENSE), does not require membership. Text-based Q&A excludes remote installation, hands-on engineering troubleshooting, and one-to-one done-for-you work. Video production and other custom services require separate scope and pricing discussions with the author through the website. This skill still delivers one storyboard spec; rendering belongs to the matching renderer agent.
 
 ## Validate
 
